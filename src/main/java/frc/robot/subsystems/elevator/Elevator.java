@@ -150,7 +150,7 @@ public class Elevator extends SubsystemBase {
 
   // Checks if above limit
   public boolean isAboveCurrentLimit() {
-    return _inputs._elevatorMotorCurrent > HARD_STOP_CURRENT_LIMIT;
+    return false;
   }
 
   // Sets the encoder values to 0
