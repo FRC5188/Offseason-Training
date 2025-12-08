@@ -64,13 +64,10 @@ public class RealArmIO implements ArmIO {
         _armMotor.set(speed);
     }
 
-    public void setIntakeMotorSpeed(double speed) {
-        _intakeMotor.set(speed);
-    }
+    // Start setIntakeMotorSpeed here! 
 
     public void setFeederMotorSpeed(double speed){
-        _feederMotor.set(speed);
-        
+        _feederMotor.set(speed);   
     }
     public void resetIntakeEncoders() {
         _intakeMotor.getEncoder().setPosition(0);
