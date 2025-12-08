@@ -156,12 +156,7 @@ public class LEDs extends SubsystemBase {
         }
     }
 
-    public void disabledAnimation1() {
-        if (!_alreadyRunning) {
-            runAnimation(LEDAnimation.PartyMode);
-            _alreadyRunning = false;            
-        }
-    }
+// Start the disabledAnimation1 method here.
 
     public void reset() {
         _candle.clearAnimation(0);
