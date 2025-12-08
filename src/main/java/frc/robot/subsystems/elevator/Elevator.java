@@ -123,12 +123,7 @@ public class Elevator extends SubsystemBase {
   }
 
   // Sets the setpoint of the PID
-  public void setSetpoint(double setpoint) {
-    if (setpoint < 0.25 || setpoint > ELEVATOR_MAX_INCHES)
-      return;
-    _elevatorMotorPID.reset(getCurrentPosInches());
-    _elevatorMotorPID.setGoal(setpoint);
-  }
+  // Start the setSetpoint method here
 
   // Checks if it is at the setpoint
   public boolean isAtSetpoint() {
