@@ -156,8 +156,10 @@ public class LEDs extends SubsystemBase {
         }
     }
 
-// Start the disabledAnimation1 method here.
-
+    public void disabledAnimation1() {
+    // Put the code here
+    }
+    
     public void reset() {
         _candle.clearAnimation(0);
         _alreadyRunning = false;
