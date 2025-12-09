@@ -123,7 +123,7 @@ public class Elevator extends SubsystemBase {
   }
 
   // Sets the setpoint of the PID
-  public void setSetpoint() {
+  public void setSetpoint(double setpoint) {
     
   } 
   
