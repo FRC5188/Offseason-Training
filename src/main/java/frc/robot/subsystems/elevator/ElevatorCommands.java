@@ -21,11 +21,7 @@ public final class ElevatorCommands {
     }
 
     public Command decrementElevatorPosition() {
-        return new InstantCommand(
-            () -> {
-                _elevator.decrementElevatorPosition();
-                
-            } , _elevator);  
+        return new InstantCommand();
     }
   
     public Command incrementElevatorPosition(){
