@@ -64,12 +64,9 @@ public class MultiSubsystemCommands {
                         _arm.getCurrentPos(), setpoint.getArmPosition()));
     }
 
-    public Command setGamepieceMode(GamepieceMode mode) {
-        return new InstantCommand(
-                () -> {
-                    _elevator.setCurrentMode(mode);
-                    _arm.setCurrentMode(mode);
-                }, _elevator, _arm);
+    public Command setGamepieceMode() {
+        return new InstantCommand();
+    // Set up the command in here.
     }
 
     public Command waitForOverallMechanism() {
