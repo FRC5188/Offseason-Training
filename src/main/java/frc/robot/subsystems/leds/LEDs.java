@@ -157,7 +157,10 @@ public class LEDs extends SubsystemBase {
     }
 
     public void disabledAnimation1() {
-    // Put the code here
+    if (!_alreadyRunning) {
+        runAnimation(LEDAnimation.PartyMode);
+        _alreadyRunning = false;
+    }
     }
     
     public void reset() {
