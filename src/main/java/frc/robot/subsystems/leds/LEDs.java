@@ -157,7 +157,7 @@ public class LEDs extends SubsystemBase {
     }
 
     public void disabledAnimation1() {
-    // Put the code here
+     If (_alreadyRunning)
     }
     
     public void reset() {
